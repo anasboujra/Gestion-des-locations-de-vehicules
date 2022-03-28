@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionReservation">
+   <children>
+      <Label layoutX="671.0" layoutY="7.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="644.0" layoutY="-11.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="37.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="190.0" layoutY="15.0" styleClass="Title" text="Gestion Des Reservations">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Button layoutX="30.0" layoutY="111.0" mnemonicParsing="false" onAction="#interfaceAjouterReservation" prefHeight="37.0" prefWidth="301.0" styleClass="Button" text="Ajouter Une Réservation">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="350.0" layoutY="111.0" mnemonicParsing="false" onAction="#interfaceModifierReservation" prefHeight="35.0" prefWidth="328.0" styleClass="Button" text="Modifier/Supprimer Une Réservation">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="30.0" layoutY="199.0" mnemonicParsing="false" onAction="#interfaceReservationDecroissance" prefHeight="37.0" prefWidth="646.0" styleClass="Button" text="La liste des réservations par ordre décroissant de la date de réservation">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="30.0" layoutY="290.0" mnemonicParsing="false" onAction="#interfaceReservationsNonValidees" prefHeight="37.0" prefWidth="301.0" styleClass="Button" text="La liste des réservations non validées">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="350.0" layoutY="290.0" mnemonicParsing="false" onAction="#interfaceReservationsValidees" prefHeight="35.0" prefWidth="328.0" styleClass="Button" text="La liste des réservations validées">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="30.0" layoutY="386.0" mnemonicParsing="false" onAction="#interfaceReservationsAnnulees" prefHeight="37.0" prefWidth="301.0" styleClass="Button" text="La liste des réservations annulées">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="350.0" layoutY="386.0" mnemonicParsing="false" onAction="#interfaceInfosReservation" prefHeight="35.0" prefWidth="328.0" styleClass="Button" text="Rechercher une réservation par son code">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="559.0" layoutY="456.0" onMouseClicked="#retourMenu" styleClass="Title" text="Retour au menu→">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

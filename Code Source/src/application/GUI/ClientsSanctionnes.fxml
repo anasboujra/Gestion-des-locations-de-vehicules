@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionSanction">
+   <children>
+      <Label layoutX="672.0" layoutY="5.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="16.0" styleClass="Title" text="La liste des clients sanctionnés">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="611.0" layoutY="50.0" mnemonicParsing="false" onAction="#actualiserClientsSanctionnes" text="Actualiser" />
+      <TableView fx:id="tableview" layoutX="18.0" layoutY="78.0" prefHeight="386.0" prefWidth="662.0">
+         <columns>
+            <TableColumn fx:id="contrat" prefWidth="214.0" text="Contrat" />
+            <TableColumn fx:id="client" prefWidth="226.0" text="Client" />
+            <TableColumn fx:id="sanction" minWidth="0.0" prefWidth="219.0" text="Sanction" />
+         </columns>
+      </TableView>
+      <Label layoutX="551.0" layoutY="470.0" onMouseClicked="#retourGestion" styleClass="Title" text="Retour au gestion→">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="640.0" layoutY="-13.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

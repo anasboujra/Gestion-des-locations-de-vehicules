@@ -1,0 +1,11 @@
+1-Lancez phpMyAdmin.
+2-Vérifiez que les données de connection a phpMyAdmin sont: 
+	Username:root
+	password:
+3-Créez une base de données appelée "java".
+4-Importer le fichier "java.sql" dans cette base de données.
+5-Lancer l'application avec:
+	username:admin
+	password:admin
+
+*Remarque: La clé de réinitialisation du mot de passe est "ensa2020".

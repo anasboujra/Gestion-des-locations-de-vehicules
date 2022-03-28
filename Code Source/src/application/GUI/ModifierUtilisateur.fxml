@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionUtilisateur">
+   <children>
+      <Label layoutX="470.0" layoutY="10.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="144.0" layoutY="28.0" prefHeight="53.0" prefWidth="212.0" styleClass="Title" text="UTILISATEUR" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutY="93.0" opacity="0.11" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="78.0" layoutY="104.0" styleClass="Label" text="Rechercher (CIN)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rechercher" layoutX="211.0" layoutY="101.0" prefHeight="33.0" prefWidth="139.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button layoutX="361.0" layoutY="103.0" mnemonicParsing="false" onAction="#rechercherUtilisateurModifier" prefHeight="26.0" prefWidth="41.0" styleClass="Button" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutY="141.0" opacity="0.11" prefHeight="3.0" prefWidth="500.0" />
+      <TextField fx:id="cin" layoutX="173.0" layoutY="194.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="197.0" styleClass="Label" text="CIN">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="174.0" layoutY="253.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="256.0" styleClass="Label" text="Mot de passe">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="174.0" layoutY="312.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="315.0" styleClass="Label" text="Nom">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prenom" layoutX="174.0" layoutY="370.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="373.0" styleClass="Label" text="Prénom">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="174.0" layoutY="426.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="429.0" styleClass="Label" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adresse" layoutX="174.0" layoutY="482.0" prefHeight="32.0" prefWidth="267.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="60.0" layoutY="485.0" styleClass="Label" text="Adresse">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="324.0" layoutY="537.0" mnemonicParsing="false" onAction="#modifierUtilisateur" prefHeight="26.0" prefWidth="112.0" styleClass="Button" text="Enregistrer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="64.0" layoutY="537.0" mnemonicParsing="false" onAction="#retourGestion" prefHeight="38.0" prefWidth="112.0" styleClass="Button2" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="194.0" layoutY="537.0" mnemonicParsing="false" onAction="#supprimerUtilisateur" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #bb2222;" styleClass="Button" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="440.0" layoutY="-8.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

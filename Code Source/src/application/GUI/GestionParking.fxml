@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionParking">
+   <children>
+      <Label layoutX="671.0" layoutY="7.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="228.0" layoutY="21.0" styleClass="Title" text="Gestion Des Parkings">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Button layoutX="169.0" layoutY="92.0" mnemonicParsing="false" onAction="#interfaceAjouterParking" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Ajouter Un Parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="145.0" mnemonicParsing="false" onAction="#interfaceModifierParking" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Modifier/Supprimer Un Parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="198.0" mnemonicParsing="false" onAction="#interfaceDeposerVehicule" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Déposer un véhicule dans un parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="251.0" mnemonicParsing="false" onAction="#interfaceSortirVehicule" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Faire sortir un véhicule d’un parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="304.0" mnemonicParsing="false" onAction="#interfaceVehiculeParking" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="La liste de véhicules par parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="357.0" mnemonicParsing="false" onAction="#interfaceNombrePlacesVides" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Le nombre de places vides par parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="410.0" mnemonicParsing="false" onAction="#interfaceInfosParking" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Afficher les informations d'un parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="559.0" layoutY="456.0" onMouseClicked="#retourMenu" styleClass="Title" text="Retour au menu→">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="646.0" layoutY="-11.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

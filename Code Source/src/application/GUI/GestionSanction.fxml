@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionSanction">
+   <children>
+      <Label layoutX="671.0" layoutY="7.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="205.0" layoutY="34.0" styleClass="Title" text="Gestion Des Sanctions">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+      <Button layoutX="169.0" layoutY="287.0" mnemonicParsing="false" onAction="#interfaceReglerSanction" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="Régler les sanctions ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="171.0" mnemonicParsing="false" onAction="#interfaceClientsSanctionnes" prefHeight="38.0" prefWidth="363.0" styleClass="Button" text="La liste des clients sanctionnés">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="559.0" layoutY="456.0" onMouseClicked="#retourMenu" styleClass="Title" text="Retour au menu→">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="643.0" layoutY="-11.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

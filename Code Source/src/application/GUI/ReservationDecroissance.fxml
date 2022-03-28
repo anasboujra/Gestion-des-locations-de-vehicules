@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionReservation">
+   <children>
+      <Label layoutX="671.0" layoutY="6.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="18.0" styleClass="Title" text="Informations des reservations">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="609.0" layoutY="50.0" mnemonicParsing="false" onAction="#actualiser" text="Actualiser" />
+      <TableView fx:id="tableview" layoutX="4.0" layoutY="78.0" prefHeight="386.0" prefWidth="692.0">
+         <columns>
+            <TableColumn fx:id="code" prefWidth="100.0" text="Reservation" />
+            <TableColumn fx:id="client" prefWidth="95.0" text="Client" />
+            <TableColumn fx:id="vehicule" prefWidth="86.0" text="Vehicule" />
+            <TableColumn fx:id="dateRe" prefWidth="105.0" text="Date Reservation" />
+            <TableColumn fx:id="dateD" prefWidth="101.0" text="Date Depart" />
+            <TableColumn fx:id="dateRo" prefWidth="100.0" text="Date Retour" />
+            <TableColumn fx:id="statusRe" prefWidth="101.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="443.0" layoutY="470.0" onMouseClicked="#retourGestion" styleClass="Title" text="Retour au gestion des reservations→">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="646.0" layoutY="-12.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

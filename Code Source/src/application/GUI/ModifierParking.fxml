@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" styleClass="Window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionParking">
+   <children>
+      <Label layoutX="470.0" layoutY="10.0" onMouseClicked="#exitButton" opacity="0.88" prefHeight="25.0" prefWidth="12.0" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="31.0" prefHeight="53.0" prefWidth="309.0" styleClass="Title" text="PARKING" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutY="115.0" opacity="0.11" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="25.0" layoutY="126.0" styleClass="Label" text="Rechercher (N° Parking)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rechercher" layoutX="275.0" layoutY="124.0" prefHeight="33.0" prefWidth="139.0" styleClass="TextField">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="425.0" layoutY="124.0" mnemonicParsing="false" onAction="#rechercherParking" prefHeight="26.0" prefWidth="41.0" styleClass="Button" text="OK" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutY="164.0" opacity="0.11" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="50.0" layoutY="215.0" styleClass="Label" text="N°  Parking">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nParking" layoutX="226.0" layoutY="215.0" prefHeight="32.0" prefWidth="235.0" styleClass="TextField" />
+      <Label layoutX="50.0" layoutY="271.0" styleClass="Label" text="Nom">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomParking" layoutX="226.0" layoutY="271.0" prefHeight="32.0" prefWidth="235.0" styleClass="TextField" />
+      <Label layoutX="50.0" layoutY="327.0" styleClass="Label" text="Capacite">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="capaciteParking" layoutX="226.0" layoutY="327.0" prefHeight="32.0" prefWidth="235.0" styleClass="TextField" />
+      <Label layoutX="50.0" layoutY="383.0" styleClass="Label" text="Rue">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rue" layoutX="226.0" layoutY="383.0" prefHeight="32.0" prefWidth="235.0" styleClass="TextField" />
+      <Label layoutX="50.0" layoutY="439.0" prefHeight="26.0" prefWidth="133.0" styleClass="Label" text="Arrondissement">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="arrondissement" layoutX="226.0" layoutY="439.0" prefHeight="32.0" prefWidth="235.0" styleClass="TextField" />
+      <Button layoutX="334.0" layoutY="537.0" mnemonicParsing="false" onAction="#modifierParking" prefHeight="26.0" prefWidth="112.0" styleClass="Button" text="Enregistrer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="74.0" layoutY="537.0" mnemonicParsing="false" onAction="#retourGestion" prefHeight="38.0" prefWidth="112.0" styleClass="Button2" text="Annuler" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="204.0" layoutY="537.0" mnemonicParsing="false" onAction="#supprimerParking" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #bb2222;" styleClass="Button" text="Supprimer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="444.0" layoutY="-8.0" onMouseClicked="#minimizeButton" opacity="0.88" prefHeight="33.0" prefWidth="17.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

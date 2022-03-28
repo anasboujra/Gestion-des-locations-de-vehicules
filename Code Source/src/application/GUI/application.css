@@ -1,0 +1,34 @@
+.Window{
+	-fx-background-color: linear-gradient(#000000, #2f4f4f);
+}
+
+.Title{
+	-fx-text-fill: #ffffff;
+	-fx-font-weight: bold;
+}
+
+.Button{
+	-fx-background-color: #4f6f6f;
+	-fx-background-radius: 8px;
+	-fx-text-fill: #ffffff;
+}
+
+.Button2{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 8px;
+	-fx-text-fill: #4f6f6f;
+}
+
+
+.TextField{
+	-fx-border-color: #4f6f6f;
+	-fx-background-color: transparent;
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 15px;
+}
+
+.Label{
+	-fx-text-fill: #ffffff;
+	
+}
+
